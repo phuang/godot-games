@@ -10,12 +10,12 @@ var direction: float = 1.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if ray_cast_right.is_colliding():
-		direction = -1.0
-		animated_sprite.flip_h = true
-		
-	if ray_cast_left.is_colliding():
-		direction = 1.0
-		animated_sprite.flip_h = false
+    if ray_cast_right.is_colliding():
+        direction = -1.0
+        animated_sprite.flip_h = true
 
-	position.x += SPEED * delta * direction
+    if ray_cast_left.is_colliding():
+        direction = 1.0
+        animated_sprite.flip_h = false
+
+    position.x += SPEED * delta * direction
