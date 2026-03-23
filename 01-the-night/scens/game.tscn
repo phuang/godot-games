@@ -346,7 +346,6 @@ _data = {
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_gpwcj"]
 
 [node name="Game" type="Node2D" unique_id=91831460]
-position = Vector2(17, 0)
 
 [node name="GameManager" type="Node" parent="." unique_id=1444362609]
 unique_name_in_owner = true
